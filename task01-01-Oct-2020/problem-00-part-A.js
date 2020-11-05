@@ -36,6 +36,8 @@ cat.catFriends.forEach(x => { console.log(`name : ${x.name}`)});
 
 //Print the total weight of catFriends
 const totalWeight = cat.catFriends.reduce((acc,cur)=>acc+cur.weight,0);
+// const totalWeight = cat.catFriends.reduce((a, b) => a.weight + b.weight);
+
 console.log(`Total weight of catFriends: ${totalWeight}`);
 
 //Print the total activities of all cats (op:6)
@@ -49,3 +51,4 @@ console.log(cat.catFriends)
 //Update the fur color of bar
 cat.catFriends[0].furcolor="orange";
 console.log(cat.catFriends[0].furcolor) //orange
+
