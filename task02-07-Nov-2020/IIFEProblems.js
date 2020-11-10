@@ -76,13 +76,29 @@
 //     })([2,1],[3,4,5])
 //========================================================================================================================>
 //Remove duplicates from an array
-(function(arr) {
-    let map = new Map();
+// (function(arr) {
+//     let map = new Map();
     
-    let newArr = arr.filter(item => map.has(item) ? false : map.set(item,true))
+//     let newArr = arr.filter(item => map.has(item) ? false : map.set(item,true))
 
-    console.log(newArr);
-})([1,1,2,3,1,5])
+//     console.log(newArr);
+// })([1,1,2,3,1,5])
 //========================================================================================================================>
-//========================================================================================================================>
+// Rotate an array by k times and return the rotated array
+// (function(arr,n){
+//     for(let rotate = 0; rotate < n; rotate++){
+//         let temp = arr[arr.length-1];
+//         console.log(temp);
+//         for(let index= arr.length-2; index>=0; index--){
+//             arr[index+1] = arr[index];
+//         }
+
+//         arr[0] = temp;
+//     }
+//     console.log(arr)
+
+//     // let newArr = arr.slice(n + 1, arr.length).concat(arr.slice(0, n + 1));
+//     // let newArr = arr.slice(n , arr.length).concat(arr.slice(0, n ));
+//     // console.log(newArr);
+// })([1,2,3,4,5],2)
 //========================================================================================================================>
