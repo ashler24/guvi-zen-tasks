@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+*{
+    text-align: center;
+}
+
+.wrapper{
+    width:1000px;
+    height: 2200px;
+    position: relative;
+    background:black;
+    left:300px;
+    right:500px;
+    border: 1px solid black;
+    border-radius:25px 25px 0 0;
+    overflow:hidden;
+
+}
+
+.wrapper:after{
+    content: "";
+    height:480px;
+    width:2px;
+    background:#d2b48c;
+    top:60px;
+    left:1em;
+    position:absolute;
+}
+
+.wrapper:before{
+    content: "";
+    height:370px;
+    width:2px;
+    background:#d2b48c;
+    top:60px;
+    right:1em;
+    position:absolute;
+}
+
+.last{
+    width:100%;
+    background:#dcdcdc;
+    position:absolute;
+    height:243px;
+    padding:40px;
+    top:1957px;
+    transform:skewY(-3deg);
+}
+
+
+.header_line{
+    position: absolute;
+    top:58px;
+    color: white;
+    text-align: center;
+    width:96%;
+    background:#d2b48c;
+    margin:0 20px;
+    line-height:2px;
+}
+
+#header_name{
+    width:180px;
+    background:black;
+    height: 100px;
+    padding:30px;
+}
+
+.header_content{
+    color:yellow;
+    font-family:'Parisienne', cursive;
+    font-weight: 400;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.header_content::first-letter{
+    font-weight:700;
+    font-size: 100px;
+}
+
+
+.skew_wrapper{
+    position: absolute;
+    top:450px;
+}
+
+.skew{
+    width:1000px;
+    height: 250px;
+    margin: 0;
+    padding:0;
+    border-bottom: 1px solid black;
+    transform: skewY(-3deg);
+    position: relative;
+}
+
+.content{
+    transform: skewY(3deg);
+    position:absolute;
+    left:400px;
+    top:100px;
+}
+
+.skew:after{
+    content: "";
+    height:100%;
+    width:2px;
+    background:#d2b48c;
+
+    left:1em;
+    position:absolute;
+}
+
+.skew:before{
+    content: "";
+    height:100%;
+    width:2px;
+    background:#d2b48c;
+ 
+    right:1em;
+    position:absolute;
+}
+
+.tan{
+    background:#faf0e6;
+}
+
+.pale-pink{
+    background:#fadadd;
+}
+
+.light-pink{
+    background:#ffb6c1;
+}
+
+.pastle-blue{
+    background:#aec6cf;
+}
+.peach{
+    background:#ffe5b4;
+}
