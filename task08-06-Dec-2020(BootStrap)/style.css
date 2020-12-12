@@ -5,7 +5,7 @@
 }
 
 #text_before_header{
-  font-size:1.60em;
+  font-size:1.252em;
 }
 
 p{
@@ -14,7 +14,7 @@ p{
 }
 #main_news_header {
   font-weight: bold;
-  font-size: 8.68em;
+  font-size: 6.78em;
   text-transform: uppercase;
   line-height:0.9em;
   text-align: justify;
@@ -25,9 +25,6 @@ p{
     text-align: justify; */
 }
 
-#lower_section{
-  
-}
 
 .section_tag {
   padding: 1px 5px 1px 1px;
