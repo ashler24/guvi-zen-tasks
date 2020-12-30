@@ -28,6 +28,12 @@ operations.forEach((item) => {
       localStorage.setItem("resultInnerText", result.innerHTML);
     }
 
+    if (result.innerText.length < 15 && e.target.className === "number") {
+      result.innerHTML += e.target.id;
+      localStorage.setItem("resultInnerText", result.innerHTML);
+
+    }
+    
     if (e.target.className === "operations") {
       //check if user has already entered the operation
       console.log(result.innerText + "  " + result.innerText.length + "before " + result.innerText.slice(-1))
@@ -50,11 +56,6 @@ operations.forEach((item) => {
       }
     }
 
-    if (result.innerText.length < 15 && e.target.className === "number") {
-      result.innerHTML += e.target.id;
-      localStorage.setItem("resultInnerText", result.innerHTML);
-
-    }
 
     if (e.target.id === "=") {
       if (result.innerHTML === "" || map.has(result.innerText.slice(-1))) {
