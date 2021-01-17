@@ -5,26 +5,47 @@
 }
 
 body{
-    background: #000000;
+    background: #fff;
 }
 
 .wrapper{
-    background: #f08080;
+    background: #fff;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+.app-title{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    position: relative;
+    letter-spacing: 4px;
+    background: #3494fa;
+    box-shadow: 0 10px 10px rgba(52,148,250,0.5);
+
+}
+
+#weatherIcon{
+    margin: 1rem;
+}
+
 
 .card{
-    width: 16rem;
+    width: 15rem;
     height: 23rem;
     margin: 2rem;
     border: 2px solid #cccc;
     border-radius: 0 0 20px 20px;
-    background:  #f08080;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 10px rgba(0,0,0,0.2);
+    background: #3494fa;
+    box-shadow: 5px 10px 20px rgba(52,148,250,0.5), -5px -5px 10px rgba(52,148,250,0.2);
+}
+
+.card:hover{
+    transform: scale(0.99);
 }
 
 .card #countryname{
@@ -47,13 +68,13 @@ body{
 }
 
 .card-body #infoWrapper{
-    color: #ffffff;
+    color: #000000;
     text-align: center;
 }
 
 .card-body #weatherBtn{
-    color: #ffff;
-    border: 1px solid #ffff;
+    color: #000000;
+    border: 1px solid #000000;
     margin: 0.8rem 0 0 1.5rem;
 }
 

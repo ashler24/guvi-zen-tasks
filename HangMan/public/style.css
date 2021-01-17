@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #dde1e7;
+}
+
+.wrong-guess{
+  background: rgb(247, 82, 82) !important;
+}
+
+.correct-guess{
+  background:rgb(148, 241, 148) !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container-sm{
+  margin-top: 5rem;
+}
+
+a .navbar-brand {
+  color: grey;
+  text-align: center;
+}
+
+.top-wrapper{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#phase-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.game-title{
+  font-size: 5rem;
+}
+
+
+#phase-1 #startGameBtn{
+  width:15rem;
+  margin: 2rem;
+}
+
+#phase-2{
+  display: flex;
+  flex-direction: column;
+}
+
+#hangman{
+  width:4rem;
+}
+
+#hangman div {
+  background: #000;
+}
+
+#hangman .base {
+  height: 2px;
+  width: 150px;
+}
+
+#hangman .left-bar {
+  height: 200px;
+  width: 2px;
+}
+
+#hangman .top-bar {
+  height: 2px;
+  width: 100px;
+}
+
+#hangman .right-bar {
+  float: left;
+  height: 30px;
+  margin-left: 100px;
+  width: 2px;
+}
+
+#hangman .head {
+  /* background: none; */
+  border-radius: 100%;
+  float: left;
+  margin-left: 85px;
+  margin-top: -175px;
+  height: 35px;
+  width: 35px;
+}
+
+#hangman .body {
+  float: left;
+  height: 130px;
+  margin-top: -158px;
+  margin-left: 100px;
+  width: 2px;
+}
+
+#hangman .left-arm,
+#hangman .right-arm,
+#hangman .left-leg,
+#hangman .right-leg {
+  float: left;
+  height: 60px;
+  margin-top: -70px;
+  margin-left: 82px;
+  transform: rotate(35deg);
+  width: 2px;
+}
+
+#hangman .right-arm,
+#hangman .right-leg {
+  margin-left: 120px;
+  margin-top: -72px;
+  transform: rotate(140deg);
+}
+
+#hangman .left-leg,
+#hangman .right-leg {
+  margin-top: -140px;
+}
+
+#guess-word{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  min-width: 750px;
+  max-width: 1000px;
+  padding: 25px;
+  border-radius: 10px;
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  /* background: #131419; */
+  /* box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+              -3px -3px 7px rgba(255,255,255,0.05); */
+}
+.wrapper .keys {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .keys input {
+  height: 50px;
+  min-width: 50px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  /* background: #131419; */
+  /* box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+              -3px -3px 7px rgba(255,255,255,0.05); */
+  margin: 10px;
+  color: grey;
+  /* color: #c7c7c7; */
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: default;
+}
+.wrapper .keys input:focus {
+  font-size: 19px;
+  color: #3498db;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+  /* box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5),
+              inset -3px -3px 7px rgba(255,255,255,0.05); */
+}
+.wrapper .keys input[value="SPACE"] {
+  width: 60%;
+}

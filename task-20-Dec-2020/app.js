@@ -12,7 +12,7 @@ async function getCountryData() {
         .then(data => countryDataList = data)
         .catch(err => console.log(err))
     
-    await createCard(countryDataList);
+    createCard(countryDataList);
 
 }
 
